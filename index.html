@@ -3,239 +3,250 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Birthday Surprise ❤️</title>
+<title>Happy Birthday Ankita ❤️</title>
 <style>
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
-body{font-family:Arial,sans-serif;background:#030305;color:#fff}
-.bg{position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,#ff006622,transparent 32%),radial-gradient(circle at 80% 80%,#7300ff2b,transparent 35%),#030305}
-.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.25}.o1{width:300px;height:300px;background:#ff0066;top:-100px;left:-80px}.o2{width:350px;height:350px;background:#7000ff;right:-100px;bottom:-120px}
-.screen{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:25px;text-align:center;opacity:0;visibility:hidden;transition:opacity .65s ease,transform .65s ease;transform:scale(1.04);z-index:2}
-.screen.active{opacity:1;visibility:visible;transform:scale(1)}
-.content{max-width:850px;position:relative;z-index:5}.script{font-family:cursive}.gradient{background:linear-gradient(90deg,#ff4f9a,#c77dff,#6ea8ff);-webkit-background-clip:text;background-clip:text;color:transparent}.glow{text-shadow:0 0 12px #ff3290,0 0 35px #ff329077}
-h1{font-size:clamp(42px,9vw,88px);margin:15px 0}h2{font-size:clamp(30px,6vw,62px);margin:15px 0}p{line-height:1.8;color:#bbb;font-size:clamp(15px,2.5vw,20px)}
-.next{position:fixed;z-index:20;bottom:34px;left:50%;transform:translateX(-50%);border:1px solid #ffffff25;background:#ffffff12;color:white;padding:13px 25px;border-radius:999px;cursor:pointer;font-size:16px;backdrop-filter:blur(12px)}
-.next:hover{background:#ffffff25}.music{position:fixed;z-index:20;right:18px;top:18px;border:1px solid #ffffff25;background:#ffffff12;color:white;padding:10px 15px;border-radius:999px;cursor:pointer}
-.dots{position:fixed;z-index:20;top:20px;left:50%;transform:translateX(-50%);display:flex;gap:6px}.dot{width:6px;height:6px;border-radius:50%;background:#ffffff33}.dot.active{background:#ff4f9a;box-shadow:0 0 10px #ff4f9a}
-.timer{position:fixed;z-index:20;bottom:20px;left:50%;transform:translateX(-50%);width:80px;height:2px;background:#ffffff18}.bar{height:100%;width:0;background:#ff4f9a}
-.photo{width:min(230px,65vw);height:290px;object-fit:cover;border-radius:24px;box-shadow:0 20px 60px #000;border:1px solid #ffffff22}
-.glass{padding:35px;border-radius:28px;background:#ffffff0c;border:1px solid #ffffff18;backdrop-filter:blur(18px)}
-.gift{width:150px;height:120px;margin:35px auto;position:relative;cursor:pointer}.box{position:absolute;bottom:0;width:150px;height:90px;background:linear-gradient(135deg,#ff247f,#8d45ff);border-radius:8px}.lid{position:absolute;top:0;left:-10px;width:170px;height:35px;background:linear-gradient(135deg,#ff4d9a,#9b62ff);border-radius:7px;z-index:3}.rv{position:absolute;left:62px;width:25px;height:120px;background:#ffd35a;z-index:4}.rh{position:absolute;top:48px;width:150px;height:18px;background:#ffd35a;z-index:4}
-.cake{width:220px;height:170px;position:relative;margin:20px auto}.base{position:absolute;bottom:0;left:10px;width:200px;height:90px;border-radius:15px 15px 25px 25px;background:linear-gradient(#ff6b9f,#d72c72)}.top{position:absolute;left:10px;top:55px;width:200px;height:35px;border-radius:50%;background:#ff9fc1}.icing{position:absolute;left:20px;top:65px;width:180px;height:45px;border-radius:0 0 20px 20px;background:#fff1f7}.candle{position:absolute;width:12px;height:55px;background:#fff;border-radius:5px;top:5px}.c1{left:65px}.c2{left:104px}.c3{left:143px}.flame{position:absolute;width:14px;height:22px;background:#ffd34e;border-radius:50% 50% 50% 0;transform:rotate(-45deg);top:-20px;box-shadow:0 0 20px #ffae00}
-.heart{position:fixed;bottom:-30px;z-index:10;animation:float linear forwards;pointer-events:none}@keyframes float{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;font-family:Arial,sans-serif;background:#090014;color:#fff}
+body{touch-action:pan-y}
+.scene{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;padding:24px;overflow:hidden}
+.scene.active{display:flex;animation:fade .8s ease}
+@keyframes fade{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:scale(1)}}
+.bg{position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,#46166e 0,#19082c 45%,#050008 100%);z-index:-2}
+.glow{position:absolute;width:260px;height:260px;border-radius:50%;background:#ff4f9a;filter:blur(90px);opacity:.28;z-index:-1}
+.content{width:min(900px,100%);position:relative}
+h1{font-size:clamp(38px,9vw,90px);margin:10px 0;font-weight:800}
+h2{font-size:clamp(28px,6vw,55px);margin:10px 0}
+p{font-size:clamp(17px,3.5vw,24px);line-height:1.6;margin:16px auto;max-width:760px}
+.small{font-size:15px;opacity:.8}
+.name{background:linear-gradient(90deg,#fff,#ffd0ea,#fff);-webkit-background-clip:text;color:transparent}
+button{border:0;border-radius:999px;padding:13px 24px;margin:8px;background:rgba(255,255,255,.15);color:#fff;font-size:16px;cursor:pointer;backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(0,0,0,.25)}
+button:hover{background:rgba(255,255,255,.25)}
+.photo{width:min(380px,85vw);height:min(500px,58vh);object-fit:cover;border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,.5);border:2px solid rgba(255,255,255,.25)}
+.gallery{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;max-height:62vh;overflow:auto;padding:8px}
+.gallery img{width:135px;height:175px;object-fit:cover;border-radius:18px;border:2px solid rgba(255,255,255,.25);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.note{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.15);border-radius:24px;padding:22px;backdrop-filter:blur(14px)}
+.gift{font-size:110px;cursor:pointer;animation:bob 1.5s infinite ease-in-out}
+@keyframes bob{50%{transform:translateY(-12px) rotate(3deg)}}
+.cake{font-size:100px;animation:bob 1.4s infinite ease-in-out}
+#hearts span{position:fixed;bottom:-30px;font-size:22px;animation:float 5s linear forwards;pointer-events:none}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+.confetti{position:fixed;top:-15px;width:9px;height:15px;animation:fall 3.5s linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+.dots{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:20}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35)}
+.dot.on{background:#fff}
+.controls{position:fixed;right:12px;top:12px;z-index:20}
+@media(max-width:600px){.gallery img{width:100px;height:135px}.photo{height:52vh}}
 </style>
 </head>
 <body>
-<div class="bg"><div class="orb o1"></div><div class="orb o2"></div></div>
 
-<script>
-const birthdayData={
-  name:"Someone Special",
-  from:"Someone Who Cares",
-  photo:"https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=900&q=80",
-  message:"Today is not just another day. It is a reminder of how wonderful, unique and special you are. May your life always be filled with beautiful moments, genuine smiles and people who truly care about you. ❤️",
-  surprise:"You deserve happiness, love and every beautiful thing life has to offer. Keep smiling, keep shining and never forget how special you are. ✨",
-  music:""
-};
-const durations=[5000,4500,5500,6000,9000,7000,7000,7000,0];
-</script>
+<div id="hearts"></div>
 
-<button class="music" id="musicBtn" onclick="toggleMusic()">🎵 Music</button>
-<audio id="audio" loop></audio>
+<!-- 1 -->
+<section class="scene active">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="content">
+    <div style="font-size:70px">✨</div>
+    <h1>A Little Surprise...</h1>
+    <p>Someone special has a birthday today.</p>
+    <button onclick="startMusic();next()">Continue ❤️</button>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="scene">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="content">
+    <div style="font-size:65px">💖</div>
+    <h2>For Someone Special</h2>
+    <h1 class="name">Ankita</h1>
+    <button onclick="next()">Continue ✨</button>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="scene">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="content">
+    <div style="font-size:80px">🎂</div>
+    <h1>Happy Birthday, Ankita!</h1>
+    <p>Today is your special day. May it be filled with smiles, happiness and beautiful memories.</p>
+    <button onclick="next()">Continue 🎉</button>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="scene">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="content">
+    <h2>Beautiful Memories 📸</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Memory 1">
+      <img src="photo2.jpg" alt="Memory 2">
+      <img src="photo3.jpg" alt="Memory 3">
+      <img src="photo4.jpg" alt="Memory 4">
+      <img src="photo5.jpg" alt="Memory 5">
+    </div>
+    <button onclick="next()">Continue ❤️</button>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="scene">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="content">
+    <h2>A Birthday Note 💌</h2>
+    <div class="note">
+      <p id="typed"></p>
+    </div>
+    <button onclick="next()">Continue ✨</button>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="scene">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="content">
+    <div class="gift" onclick="openGift()">🎁</div>
+    <h2>There is a little surprise...</h2>
+    <p class="small">Tap the gift 🎁</p>
+    <button onclick="next()">Skip →</button>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="scene">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="content">
+    <div style="font-size:75px">✨💖✨</div>
+    <h2>You deserve happiness</h2>
+    <p>You deserve beautiful moments, genuine smiles and every good thing life has to offer. Keep smiling and keep shining, Ankita. 🌸</p>
+    <button onclick="next()">Continue 🎂</button>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="scene">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="content">
+    <div class="cake">🎂</div>
+    <h1>Make a Wish! ✨</h1>
+    <p>May all your dreams come true.</p>
+    <button onclick="next()">One Last Surprise ❤️</button>
+  </div>
+</section>
+
+<!-- 9 LAST PHOTO -->
+<section class="scene">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="content">
+    <h2>One Last Memory ❤️</h2>
+    <img class="photo" src="birthday-collage.png" alt="Birthday Memory">
+    <h2>Happy Birthday, Ankita! 🎉</h2>
+    <p>Keep smiling, keep shining and have an amazing year ahead. ❤️</p>
+    <button onclick="replay()">Replay 🔄</button>
+  </div>
+</section>
+
+<div class="controls">
+  <button onclick="toggleMusic()" id="musicBtn">🔇 Music</button>
+</div>
 <div class="dots" id="dots"></div>
-<div class="timer"><div class="bar" id="bar"></div></div>
 
-<section class="screen active"><div class="content">
-<p style="letter-spacing:4px;text-transform:uppercase">A little surprise awaits</p>
-<h1 class="script glow">Someone made this<br><span class="gradient">just for you</span></h1>
-<p>Your birthday surprise is about to begin. ❤️</p>
-</div></section>
-
-<section class="screen"><div class="content">
-<p>Today is all about...</p><h1 id="name" class="gradient glow"></h1><p>Someone truly special.</p>
-</div></section>
-
-<section class="screen"><div class="content">
-<div style="font-size:60px">🎂</div><p style="letter-spacing:4px;text-transform:uppercase">Today is your day</p>
-<h1 class="script glow">Happy Birthday</h1><h2 id="bname" class="gradient"></h2>
-</div></section>
-
-<section class="screen"><div class="content">
-<p style="letter-spacing:4px;text-transform:uppercase">A beautiful memory</p>
-<img id="photo" class="photo"><p>Some moments deserve to be remembered forever. ❤️</p>
-</div></section>
-
-<section class="screen"><div class="content">
-<div style="font-size:50px">💌</div><p style="letter-spacing:4px;text-transform:uppercase">A message from the heart</p>
-<p id="message"></p><p>— <span id="from"></span></p>
-</div></section>
-
-<section class="screen"><div class="content">
-<p style="letter-spacing:4px;text-transform:uppercase">One more surprise</p><h2>Something is waiting for you...</h2>
-<div class="gift" onclick="openGift()"><div class="box"></div><div class="lid" id="lid"></div><div class="rv"></div><div class="rh"></div></div>
-<p>Tap the gift 🎁 or press Continue</p>
-</div></section>
-
-<section class="screen"><div class="content glass">
-<div style="font-size:60px">💖</div><h2>A little reminder...</h2><p id="surprise"></p>
-</div></section>
-
-<section class="screen"><div class="content">
-<h2 class="script glow">Make a wish...</h2>
-<div class="cake">
-<div class="candle c1"><div class="flame"></div></div>
-<div class="candle c2"><div class="flame"></div></div>
-<div class="candle c3"><div class="flame"></div></div>
-<div class="top"></div><div class="icing"></div><div class="base"></div>
-</div><p>Close your eyes and make a wish. ✨</p>
-</div></section>
-
-<section class="screen"><div class="content">
-<div style="font-size:70px">🎉</div><h1 class="script glow">Once Again...</h1><h2 class="gradient">Happy Birthday!</h2>
-<p>May your smile stay bright, your dreams grow bigger, and your coming year be filled with unforgettable moments.</p>
-<button class="next" style="position:static;transform:none;margin-top:20px" onclick="restart()">↻ Replay</button>
-</div></section>
-
-<button class="next" id="next" onclick="nextScreen()">Continue →</button>
+<!-- Song intentionally left empty for now -->
+<audio id="music" loop preload="auto" src="kesariya.mp3"></audio>
 
 <script>
-const screens=[...document.querySelectorAll(".screen")];
-const dots=document.getElementById("dots");
-const bar=document.getElementById("bar");
-let current=0, timer=null, typingTimer=null;
+const scenes=[...document.querySelectorAll('.scene')];
+let current=0, timer;
+const durations=[5000,4500,5500,6500,9500,7000,7000,7000,0];
 
-birthdayData.name && (document.getElementById("name").textContent=birthdayData.name);
-document.getElementById("bname").textContent=birthdayData.name;
-document.getElementById("photo").src=birthdayData.photo;
-document.getElementById("from").textContent=birthdayData.from;
-document.getElementById("surprise").textContent=birthdayData.surprise;
-document.getElementById("audio").src=birthdayData.music;
+const note=`Happy Birthday, Ankita! 🎂✨
 
-screens.forEach((_,i)=>{
-  const d=document.createElement("div"); d.className="dot"+(i===0?" active":""); dots.appendChild(d);
-});
+May this special day bring you countless smiles, beautiful memories and lots of happiness. Keep shining, keep smiling, and keep being the wonderful person you are.
 
-function updateUI(){
-  document.querySelectorAll(".dot").forEach((d,i)=>d.classList.toggle("active",i===current));
-  document.getElementById("next").style.display=current===screens.length-1?"none":"block";
-}
+May all your dreams come true and every new year of your life bring something beautiful. ❤️
 
-function startTimer(){
-  clearTimeout(timer);
-  bar.style.transition="none"; bar.style.width="0%";
-  const duration=durations[current];
-  if(!duration)return;
-  requestAnimationFrame(()=>{
-    bar.style.transition=`width ${duration}ms linear`;
-    bar.style.width="100%";
+Wishing you a very Happy Birthday! 🥳🌸`;
+
+function makeDots(){
+  const d=document.getElementById('dots');
+  scenes.forEach((_,i)=>{
+    const x=document.createElement('span');
+    x.className='dot'+(i===0?' on':'');
+    d.appendChild(x);
   });
-  timer=setTimeout(nextScreen,duration);
 }
-
 function show(n){
-  if(n<0||n>=screens.length)return;
+  current=Math.max(0,Math.min(n,scenes.length-1));
+  scenes.forEach((s,i)=>s.classList.toggle('active',i===current));
+  document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i===current));
   clearTimeout(timer);
-  screens[current].classList.remove("active");
-  current=n;
-  screens[current].classList.add("active");
-  updateUI();
-  animateScreen();
-  startTimer();
+  if(current===4) typeNote();
+  if(current===2||current===8) confetti();
+  if(durations[current]) timer=setTimeout(()=>next(),durations[current]);
 }
-
-function nextScreen(){ if(current<screens.length-1) show(current+1); }
-function prevScreen(){ if(current>0) show(current-1); }
-
-function animateScreen(){
-  if(current===1) pop("name");
-  if(current===2){ pop("bname"); confetti(); }
-  if(current===3) pop("photo");
-  if(current===4) typeMessage();
-  if(current===5) pop("gift");
-  if(current===6) pop("surprise");
-  if(current===7) pop("cake");
-  if(current===8) confetti();
-}
-
-function pop(id){
-  const e=document.getElementById(id)||document.querySelector("."+id);
-  if(!e)return;
-  e.animate([{opacity:0,transform:"scale(.7)"},{opacity:1,transform:"scale(1)"}],{duration:900,easing:"cubic-bezier(.2,1.5,.4,1)",fill:"forwards"});
-}
-
-function typeMessage(){
-  clearInterval(typingTimer);
-  const e=document.getElementById("message"), text=birthdayData.message;
-  e.textContent=""; let i=0;
-  typingTimer=setInterval(()=>{
-    if(current!==4){clearInterval(typingTimer);return}
-    e.textContent+=text[i++];
-    if(i>=text.length)clearInterval(typingTimer);
-  },25);
-}
-
-function openGift(){
-  clearTimeout(timer);
-  document.getElementById("lid").animate(
-    [{transform:"translateY(0) rotate(0)"},{transform:"translateY(-100px) rotate(-15deg)"}],
-    {duration:700,fill:"forwards",easing:"ease-out"}
-  );
-  confetti();
-  setTimeout(()=>{if(current===5)show(6)},850);
-}
-
-function confetti(){
-  const s=["🎉","✨","💖","🎂","🥳","💕","🌟"];
-  for(let i=0;i<25;i++){
-    const e=document.createElement("div");
-    e.textContent=s[Math.floor(Math.random()*s.length)];
-    e.style.cssText=`position:fixed;left:${Math.random()*100}vw;top:-30px;z-index:50;font-size:${15+Math.random()*20}px;pointer-events:none`;
-    document.body.appendChild(e);
-    const x=(Math.random()-.5)*350,d=1800+Math.random()*1800;
-    e.animate([{transform:"translateY(0)"},{transform:`translate(${x}px,${innerHeight+100}px) rotate(720deg)`,opacity:0}],{duration:d,easing:"ease-out"}).onfinish=()=>e.remove();
+function startMusic(){
+  const a=document.getElementById("music");
+  if(a.paused){
+    a.play().then(()=>{document.getElementById("musicBtn").textContent="🔊 Music"}).catch(()=>{});
   }
 }
-
-function hearts(){
-  const e=document.createElement("div");
-  e.className="heart";e.textContent="💖";
-  e.style.left=Math.random()*100+"vw";
-  e.style.fontSize=12+Math.random()*24+"px";
-  e.style.animationDuration=5+Math.random()*5+"s";
-  document.body.appendChild(e);
-  setTimeout(()=>e.remove(),11000);
+function next(){ startMusic(); if(current<scenes.length-1) show(current+1); }
+function replay(){ show(0); }
+function typeNote(){
+  const el=document.getElementById('typed');
+  el.textContent='';
+  let i=0;
+  const run=()=>{ if(i<note.length){el.textContent+=note[i++];setTimeout(run,18)} };
+  run();
 }
-setInterval(hearts,700);
-
-function restart(){
-  clearTimeout(timer); clearInterval(typingTimer);
-  document.getElementById("message").textContent="";
-  document.getElementById("lid").style.transform="";
-  document.querySelectorAll(".flame").forEach(e=>e.style.opacity="1");
-  current=0;screens.forEach((s,i)=>s.classList.toggle("active",i===0));
-  updateUI();startTimer();
+function openGift(){
+  burstHearts();
+  setTimeout(()=>next(),400);
 }
-
-let playing=false;
+function burstHearts(){
+  for(let i=0;i<18;i++){
+    const s=document.createElement('span');
+    s.textContent=['❤️','💖','💕','✨'][Math.floor(Math.random()*4)];
+    s.style.left=Math.random()*100+'vw';
+    s.style.animationDuration=(3+Math.random()*3)+'s';
+    document.getElementById('hearts').appendChild(s);
+    setTimeout(()=>s.remove(),6500);
+  }
+}
+function confetti(){
+  for(let i=0;i<70;i++){
+    const c=document.createElement('i');
+    c.className='confetti';
+    c.style.left=Math.random()*100+'vw';
+    c.style.animationDelay=Math.random()*.8+'s';
+    c.style.transform=`rotate(${Math.random()*360}deg)`;
+    c.style.background=`hsl(${Math.random()*360},90%,70%)`;
+    document.body.appendChild(c);
+    setTimeout(()=>c.remove(),4500);
+  }
+}
 function toggleMusic(){
-  const audio=document.getElementById("audio");
-  if(!birthdayData.music){alert("CUSTOMIZE HERE me music ka direct MP3 URL add karo.");return}
-  if(playing){audio.pause();playing=false;document.getElementById("musicBtn").textContent="🎵 Music"}
-  else{audio.play().then(()=>{playing=true;document.getElementById("musicBtn").textContent="⏸ Pause"}).catch(()=>alert("Music play nahi hua. Button dobara press karein."))}
+  const a=document.getElementById('music');
+  const b=document.getElementById('musicBtn');
+  if(!a.src){alert('Song abhi add nahi kiya gaya. Baad mein kesariya.mp3 add karke audio source set kar sakte ho.');return}
+  if(a.paused){a.play();b.textContent='🔊 Music'}else{a.pause();b.textContent='🔇 Music'}
 }
-
-document.addEventListener("keydown",e=>{
-  if(e.key==="ArrowRight"||e.key==="Enter"||e.key===" ")nextScreen();
-  if(e.key==="ArrowLeft")prevScreen();
-});
-
-let sx=0;
-document.addEventListener("touchstart",e=>sx=e.changedTouches[0].screenX,{passive:true});
-document.addEventListener("touchend",e=>{
-  const dx=sx-e.changedTouches[0].screenX;
-  if(Math.abs(dx)>50)(dx>0?nextScreen:prevScreen)();
+let startX=0;
+document.addEventListener('touchstart',e=>startX=e.touches[0].clientX,{passive:true});
+document.addEventListener('touchend',e=>{
+  const dx=e.changedTouches[0].clientX-startX;
+  if(Math.abs(dx)>60){dx<0?next():show(current-1)}
 },{passive:true});
-
-updateUI();startTimer();
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key===' '||e.key==='Enter')next();
+  if(e.key==='ArrowLeft')show(current-1);
+});
+makeDots();
+show(0);
+burstHearts();
 </script>
 </body>
 </html>
